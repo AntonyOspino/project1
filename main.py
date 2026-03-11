@@ -1,7 +1,10 @@
 import json
 from fastapi import FastAPI
 
-app = FastAPI(title="Proyecto 1 - API de Antony", description="Resolución de 14 ejercicios en FastAPI")
+app = FastAPI(title="API de Programación Agéntica - EPII Diurno", description="Elaborado por Antony Ospino", version="1.0.0.", contact={
+                "name": "Antony Ospino",
+                "email": "amospinop@ul.edu.co",
+        })
 
 @app.get("/")
 def ruta_principal():
